@@ -19,25 +19,14 @@ const Table = ({ data }) => {
             
             <div key={data[i].id}>
               
-              <table>
-                <tr>
-                  <th>Id</th>
-                  <th>First Name</th>
-                  <th>Last name</th>
-                </tr>
-                <tr>
-                  <td>{data[i].id}</td>
-                  <td>{data[i].lastName}</td>
-                  <td>{data[i].email}</td>
-                </tr>
-              </table>
+          <h1>{data[i].firstName}</h1>
             </div>
           );
         }
         return displayData;
       })()}
 
-      <Pagination  
+      <Pagination  color="primary"
       count={totalpages}
       onChange={(event,value)=>displayPage(value)}
       />

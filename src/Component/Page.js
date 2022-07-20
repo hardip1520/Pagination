@@ -8,7 +8,6 @@ const Page = () => {
             const res = await fetch('https://dummyjson.com/users')
             const data = await res.json()
             setData(data)
-            console.log(data)
         };
         pageData();
     },[]);
